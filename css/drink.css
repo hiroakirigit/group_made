@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+.clearfix::after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+li{
+  list-style-type:none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 2;
+  overflow-x:hidden;
+  width:100%;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*----ここからheader------------------------------------------------------*/
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(143,167,180,.7);
+  position: fixed;
+  z-index: 100;
+}
+
+.logo {
+  float:left;
+}
+
+.global-nav {
+  font-family: 'DM Serif Text', serif;
+  float:right;
+}
+
+.global-nav li {
+  float: left;
+  margin: 10px 20px;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.global-nav li a:hover {
+  color: #0a0;
+  border-bottom:1px solid #0a0;
+}
+/*-------ここまでheader--------------------------------*/
+
+/*-------ここから背景のフルーツ画像---------------------*/
+#container{
+	position:relative;
+	z-index:10;
+}
+
+.orange{
+	position:absolute;
+	top:-10px;
+	left:-170px;
+	opacity:0.6;
+	z-index:1;
+	width:150px;
+	height:150px;
+}
+
+.ichigo{
+	position:absolute;
+	top:500px;
+	right:-200px;
+	opacity:0.6;
+	z-index:1;
+	width:200px;
+	height:200px;
+}
+
+
+
+
+
+
+/*-------ここかまで背景のフルーツ画像---------------------*/
+
+
+/*＝＝＝＝ここからwrap＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+#wrap {
+  width: 100%;
+  margin:0 auto;
+}
+
+#wrap img {
+	width: 100%;
+	height: 400px;
+}
+
+#container{
+	width:80%;
+	margin:0 auto;
+	text-align:center;
+}
+#container h1{
+	margin-top:30px;
+  font-size:50px;
+	font-family:'DM Serif Text', serif;
+  letter-spacing:0.3em;
+}
+
+.smothie-list,.coffee-list{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+
+#smothie h2,#coffee h2,#softdrink{
+  font-size:30px;
+	font-family:'DM Serif Text', serif;
+  letter-spacing: 0.2em;
+  margin-top:130px;
+}
+
+#softdrink {
+	line-height:1;
+}
+#softdrink span{
+	font-size:15px;
+	padding-left:10px;
+	
+}
+.product{
+	width:25%;
+	margin-bottom:30px;
+}
+
+.product img, .lemonade img{
+	width:250px;
+	height:250px;
+  box-shadow: 5px 5px 10px 3px rgba(160,160,160,.5);
+}
+
+.product p{
+	margin:0;
+	padding-top:15px;
+}
+.product p:last-child{
+	padding:0;
+	margin:0;
+}
+
+.lemonade{
+  position:relative;
+  width:250px; 
+  height:250px;
+  margin:0 auto;
+}
+.lemonade::before{
+  position:absolute;
+  display:block;
+  content:"";
+  top:-10px;
+  left:-10px;
+  width:40px;
+  height:40px;
+  background:linear-gradient(135deg, #8fa7b4 0,#8fa7b4 50%,transparent 50%,transparent 100%);
+  z-index:10;
+}
+.lemonade::after{
+  position:absolute;
+  display:block;
+  content:"";
+  bottom:-15px;
+  right:-15px;
+  width:40px;
+  height:40px;
+  background:linear-gradient(315deg, #8fa7b4 0,#8fa7b4 50%,transparent 50%,transparent 100%);
+  z-index:10;
+}
+/*＝＝＝＝＝ここまでwrap＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+
+
+
+
+
+/*-----------ここからfooter-----------------------*/
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #8fa7b4;
+  clear: both;
+}
+
+.footer-nav {
+  float: right;
+  height: 50px;
+
+}
+
+footer li {
+  float :left;
+  margin: 0 10px;
+  font-size: 14px;
+  list-style-type: none;
+  padding: 10px 10px;
+   color: #ffffff;
+}
+
+footer a {
+  text-decoration: none;
+   color: #ffffff;
+}
+
+footer p {
+	color: #282828;
+	display: inline-block;
+	padding-top: 15px;
+	padding-left: 100px;
+	color: #ffffff;
+}
+
+/*-----------ここまでfooter-------------------------*/
+
+/*---------------ロゴのCSS*-------------------*/
+.veggi{
+    margin: 0;
+    position: absolute;
+    left:80px;
+    top: 50%;
+    line-height:4px;
+    font-size:35px;
+    font-family:'DM Serif Text', serif;
+    letter-spacing:0.1em;
+}
+/*---------------ロゴのCSS*-------------------*/
+

@@ -1,0 +1,321 @@
+@charset "utf-8";
+
+.clearfix::after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 2;
+  width:100%;
+  overflow-x:hidden;
+
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+/*gift img {
+  vertical-align: bottom;
+}*/
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*----ここからheader------------------------------------------------------*/
+
+header a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(143,167,180,0.7);
+  position: fixed;
+  z-index: 10000;
+}
+
+h1{
+	font-size:50px;
+	margin-top:30px;
+	letter-spacing:0.3em;
+}
+
+.global-nav {
+  float: right;
+  font-family: 'DM Serif Text', serif;
+}
+
+.global-nav li {
+  float: left;
+  margin: 10px 20px;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.global-nav li a:hover {
+  color: #0a0;
+  border-bottom:1px solid #0a0;
+}
+
+
+.veggi{
+	margin:0px;
+	position: absolute;
+	left:80px;
+	top: 50%;
+	line-height:4px;
+	font-size:35px;
+	font-family:'DM Serif Text', serif;
+	letter-spacing:0.1em;
+}
+
+
+/*-------ここまでhgeader--------------------------------*/
+
+
+
+
+
+/*＝＝＝＝ここからwrap＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+#wrap {
+  width: 100%;
+  margin:0 auto;
+}
+
+#wrap img {
+	width: 100%;
+	height: 400px;
+}
+
+#container{
+	width:80%;
+	margin:0 auto;
+}
+
+#relative{
+	position:relative;
+	z-index:99;
+}
+
+.orenge{
+	position:absolute;
+	top:250px;
+	left:-300px;
+	z-index:9;
+	opacity: 0.8;
+}
+
+.ichigo{
+	position:absolute;
+	top:900px;
+	left:-150px;
+	z-index:9;
+	opacity: 0.9;
+}
+
+.lemon{
+	position:absolute;
+	top:700px;
+	right:-180px;
+	z-index:9;
+	opacity: 0.9;
+}
+
+.abokado{
+	position:absolute;
+	top:100px;
+	right:-100px;
+	z-index:9;
+/*	opacity: 0.8; */
+}
+
+.wrapper img{
+	transition: 1.0s ;
+}
+
+.wrapper img:hover{
+	opacity: 0.4 ;
+}
+
+h1{
+ 	width: 100%;
+	text-align:center;
+	margin:30px;
+	font-family: 'DM Serif Text', serif;
+}
+
+.wrapper{
+	position:relative;
+	overflow:hidden;
+	z-index:9999;
+	width:95%;
+	margin:0 auto;
+}
+
+.item {
+	float:left;
+	margin: 20px;
+}
+
+.item h3 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 16px;
+}
+
+.item p {
+	margin: 0;
+	font-size: 14px;
+	color: #666;
+}
+
+
+/*モーダル仮ここから*/
+
+.modal-wrapper {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 60px 10px;
+  text-align: center
+}
+
+.modal-wrapper:not(:target) {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+}
+
+.modal-wrapper:target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .4s, visibility .4s;
+}
+
+.modal-wrapper::after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -.05em;
+  vertical-align: middle;
+  content: ""
+}
+
+.modal-wrapper .modal-window {
+  box-sizing: border-box;
+  display: inline-block;
+  z-index: 20;
+  position: relative;
+  width: 70%;
+  max-width: 600px;
+  padding: 30px 30px 15px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+  vertical-align: middle
+}
+
+.modal-wrapper .modal-window .modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-overlay {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8)
+}
+
+.modal-wrapper .modal-close {
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  color: #95979c!important;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0
+}
+
+.modal-wrapper .modal-close:hover {
+  color: #2b2e38!important
+}
+
+.wrapper-item{
+  margin:0 auto;
+  display:block;
+  width:90%;
+}
+
+/*モーダル仮ここまで*/
+
+/*＝＝＝＝＝ここまでwrap＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+
+
+
+
+
+/*-----------ここからfooter-----------------------*/
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #8fa7b4;
+  clear: both;
+}
+
+.footer-nav {
+  float: right;
+  height: 50px;
+
+}
+
+footer li {
+  float :left;
+  margin: 0 10px;
+  font-size: 14px;
+  list-style-type: none;
+  padding: 10px 10px;
+   color: #ffffff;
+}
+
+footer a {
+  text-decoration: none;
+   color: #ffffff;
+}
+
+footer p {
+	color: #282828;
+	display: inline-block;
+	padding-top: 15px;
+	padding-left: 100px;
+	color: #ffffff;
+}
+
+/*-----------ここまでfooter-------------------------*/
+
+

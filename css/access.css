@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+.clearfix::after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 2;
+
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*----ここからheader------------------------------------------------------*/
+
+header a {
+  text-decoration: none;
+  color: #ffffff;
+  
+  display: block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color:rgba(143,167,180,0.7); 
+  position: fixed;
+  z-index: 100;
+  
+}
+
+.logo {
+  float: left;
+  height: auto;
+}
+.veggi{
+	 margin: 0;
+   position: absolute;
+   left:80px;
+   top: 50%;
+	line-height:4px;
+	font-size:35px;
+	font-family:'DM Serif Text', serif;
+	letter-spacing:0.1em;
+}/**//**//**/
+
+.global-nav {
+  float: right;
+  font-family: 'DM Serif Text', serif;
+}
+
+.global-nav li {
+  float: left;
+  margin: 10px 20px;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.global-nav li a:hover {
+  color: #0a0;
+  border-bottom:1px solid #0a0;
+}
+
+/*-------ここまでhgeader--------------------------------*/
+
+
+
+
+
+/*＝＝＝＝ここからwrap＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+#wrap {
+  width: 100%;
+  margin:0 auto;
+}
+
+#wrap img {
+	width: 100%;
+	height: 400px;
+}
+
+#container{
+	width:80%;
+	margin:0 auto;
+}
+#container{
+	position:relative;
+	z-index:10;
+}
+.metoro{
+	list-style-type:none;
+	line-height:0;
+	margin-bottom:30px;
+}
+h1{
+	font-family: 'DM Serif Text', serif;
+	font-size:50px;
+	margin-top:30px;
+	letter-spacing:0.3em;
+}
+.wrapper{
+	margin-top:30px;
+	text-align:center;
+	position:relative;
+	z-index:90;
+}
+iframe{
+	margin-bottom:30px;
+}
+/*#relative{
+	position:absolute;
+	top:800px;
+	right:450px;
+	z-index:1;
+}
+#relative img{
+	position:absolute;
+	z-index:10;
+	opacity:0.7;
+}*/
+/*#relative2{
+	position:relative;
+	top:20px;
+	left:10px;
+	z-index:1;
+}
+#relative2 img{
+	position:absolute;
+	z-index:10;
+}*/
+/*#relative3{
+	position:absolute;
+	top:500px;
+	right:500px;
+	z-index:1;
+}
+#relative3 img{
+	position:absolute;
+	z-index:10;
+	
+}*/
+.ichigo{
+	position:absolute;
+	top:100px;
+	right:200px;
+	z-index:91;
+	width:192px;
+	height:208px;	
+}
+.ichigo:hover{
+	transition:all 1s linear;
+	transform:rotateY(720deg);
+}
+.lemon{
+	position:absolute;
+	top:100px;
+	left:65px;
+	z-index:91;
+}/**/
+.lemon:hover{
+	transition:all 1s linear;
+	transform:rotateY(720deg);
+}
+
+/*＝＝＝＝＝ここまでwrap＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+
+
+
+
+
+/*-----------ここからfooter-----------------------*/
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #8fa7b4;
+  clear: both;
+}
+
+.footer-nav {
+  float: right;
+  height: 50px;
+
+}
+
+footer li {
+  float :left;
+  margin: 0 10px;
+  font-size: 14px;
+  list-style-type: none;
+  padding: 10px 10px;
+   color: #ffffff;
+}
+
+footer a {
+  text-decoration: none;
+   color: #ffffff;
+}
+
+footer p {
+	color: #282828;
+	display: inline-block;
+	padding-top: 15px;
+	padding-left: 100px;
+	color: #ffffff;
+}
+
+/*-----------ここまでfooter-------------------------*/
+

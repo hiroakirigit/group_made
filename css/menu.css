@@ -1,0 +1,343 @@
+@charset "utf-8";
+a{
+  text-decoration:none;
+  cursor:pointer;
+}
+.clearfix::after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 2;
+  overflow-x:hidden;
+  width:100%;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+/*----ここからheader------------------------------------------------------*/
+header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(143,167,180,0.7);
+  position: fixed;
+  z-index: 100;
+}
+
+.logo {
+  float:left;
+}
+
+.global-nav {
+  font-family: 'DM Serif Text', serif;
+  float:right;
+}
+
+.global-nav li {
+  float: left;
+  margin: 10px 20px;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.global-nav li a:hover {
+  color: #0a0;
+  border-bottom:1px solid #0a0;
+}
+/*-------ここまでheader--------------------------------*/
+
+/*-------ここから背景のフルーツ画像---------------------*/
+#container{
+	position:relative;
+	z-index:10;
+}
+
+.orange{
+	position:absolute;
+	top:-10px;
+	left:-100px;
+	opacity:0.6;
+  width:225px;
+	height:225px;
+  z-index:1;
+}
+.orange:hover{
+  transition:all .5s ease-out;
+  transform:translateY(150px);
+}
+.ichigo{
+  position:absolute;
+	top:270px;
+	right:-200px;
+	opacity:0.6;
+  width:200px;
+	height:200px;
+  z-index:1;
+}
+
+.ichigo:hover{
+  transition:all 1s linear;
+  transform:rotateY(720deg);
+}
+
+.smo1{
+  position:absolute;
+	top:500px;
+  left:-350px;
+	opacity:0.5;
+  width:600px;
+	height:600px;
+  z-index:1;
+  transform:rotate(45deg);
+}
+
+.smo1:hover{
+  transition:all 3s ease;
+  transform:rotateZ(1080deg);
+}
+
+.smo2{
+  position:absolute;
+	top:700px;
+	right:-300px;
+	opacity:0.5;
+  width:450px;
+	height:450px;
+  z-index:1;
+  transform:rotate(-45deg);
+}  
+
+.smo2:hover{
+  transform:rotateZ(360deg);
+  transition:all .5s ease-out;
+}
+
+
+
+/*-------ここかまで背景のフルーツ画像---------------------*/
+
+
+/*＝＝＝＝ここからwrap＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+#wrap {
+  width:100%;
+  margin:0 auto;
+}
+
+#wrap img {
+  width:100%;
+	height: 400px;
+}
+
+#container{
+	width:80%;
+	margin:0 auto;
+}
+
+#menu__wrapper{
+	text-align:center;
+	font-family:'DM Serif Text', serif;
+}
+.menu{
+  position:relative;
+}
+.menu i{
+  position:absolute;
+  top:-10px;
+  right:-10px;
+  font-size:50px;
+  color:#8fa7b4;
+  z-index:300;
+}
+#menu__wrapper h1{
+	font-size:50px;
+	margin:30px 30px 60px 30px;
+  letter-spacing:0.3em;
+}
+
+.drink , .food{
+	margin-bottom:70px;
+}
+
+.drink-menu,.food-menu{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  flex-wrap:nowrap;	
+}
+
+.scl{
+  width:300px;
+  height:300px;
+  overflow:hidden;
+  margin:0;
+  padding:0;
+  display:inline-block;
+  background-color:#000;
+  position:relative;
+  box-shadow: 5px 5px 10px 3px rgba(160,160,160,.5);
+}
+.scl img{
+	width:100%;
+	height:100%;
+  transition:all .5s;
+}
+.scl img:hover{
+  transform:scale(1.1);
+  opacity:0.5;
+}
+
+.drink h2,.food h2{
+	text-align:center;
+	font-size:35px;
+	margin-bottom:30px;
+  letter-spacing:0.2em;
+  margin-top:130px;
+
+}
+
+.menu a{
+	font-size:25px;
+	color:#282828;
+	margin:20px 0;
+  font-weight:bold;
+}
+/*＝＝＝＝＝ここまでwrap＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+
+
+
+
+
+/*-----------ここからfooter-----------------------*/
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #8fa7b4;
+  clear: both;
+}
+
+.footer-nav {
+  float: right;
+  height: 50px;
+
+}
+
+footer li {
+  float :left;
+  margin: 0 10px;
+  font-size: 14px;
+  list-style-type: none;
+  padding: 10px 10px;
+   color: #ffffff;
+}
+
+footer a {
+  text-decoration: none;
+   color: #ffffff;
+}
+
+footer p {
+	color: #282828;
+	display: inline-block;
+	padding-top: 15px;
+	padding-left: 100px;
+	color: #ffffff;
+}
+
+/*-----------ここまでfooter-------------------------*/
+
+/*---------------ロゴのCSS*-------------------*/
+.veggi{
+  margin: 0;
+  position: absolute;
+  left:80px;
+  top: 50%;
+  line-height:4px;
+  font-size:35px;
+  font-family:'DM Serif Text', serif;
+  letter-spacing:0.1em;
+}
+/*---------------ロゴのCSS*-------------------*/
+/*レスポンシブ対応タブレット以下*/
+@media screen and (max-width:769px){
+    header{
+        width:100%;
+        height:250px;
+        color:white;
+        font-family: 'DM Serif Text', serif;
+    }
+    .logo{
+        width:100%;
+        display:block;
+        margin:0 auto;
+        display:flex;
+        justify-content: center;;
+        align-content: center;
+    }
+    .logo img{
+        width:auto;
+        height:120px;
+
+    }
+    .logo a{
+        display: block;
+        font-size:50px;
+        font-weight:lighter;
+        letter-spacing: 0.2em;
+    }
+    nav{
+        display:inline-block;
+        width:100%;
+    }
+    
+    .global-nav{
+        white-space:nowrap;
+        width:95%;
+        margin:0 auto;
+        display: block;
+    }
+    .global-nav li{
+        font-size:1.5rem;
+        margin:0;
+        padding:10px 10px;
+        letter-spacing:0.2em;
+        margin:0 10px;
+
+    }
+}
+@media screen and (max-width:480px){
+  .drink-menu .menu{
+    width:50%;
+    margin:0 auto;
+  }
+  .food-menu .menu{
+    width:50%;
+    margin:0 auto;
+   
+  }
+}
+
